@@ -4,15 +4,24 @@
     "net8.0-windows7.0": {
       "DalamudPackager": {
         "type": "Direct",
-        "requested": "[2.1.13, )",
-        "resolved": "2.1.13",
-        "contentHash": "rMN1omGe8536f4xLMvx9NwfvpAc9YFFfeXJ1t4P4PE6Gu8WCIoFliR1sh07hM+bfODmesk/dvMbji7vNI+B/pQ=="
+        "requested": "[11.0.0, )",
+        "resolved": "11.0.0",
+        "contentHash": "bjT7XUlhIJSmsE/O76b7weUX+evvGQctbQB8aKXt94o+oPWxHpCepxAGMs7Thow3AzCyqWs7cOpp9/2wcgRRQA=="
       },
       "Fody": {
         "type": "Direct",
         "requested": "[6.8.1, )",
         "resolved": "6.8.1",
         "contentHash": "pwk2/No1kL1ft+zMT2y0MvzB6W5cpkdOTj+0+T2u7LGJMTw37qtlnHzCSCyvwRiZVoJ/V/DE78eQ/WEcutUVDw=="
+      },
+      "Lumina": {
+        "type": "Direct",
+        "requested": "[5.6.0, )",
+        "resolved": "5.6.0",
+        "contentHash": "Ugq7eY0ZrUxtqqfg9m4S+3fF5agU6pB+EIHqEMSGO5MH1b+xKCL/5hHWY+bEB6aRnDlEAmSGhx703z5bMOCqZg==",
+        "dependencies": {
+          "Microsoft.Extensions.ObjectPool": "8.0.7"
+        }
       },
       "NAudio.Core": {
         "type": "Direct",
@@ -38,8 +47,16 @@
           "Fody": "6.6.4"
         }
       },
+      "Microsoft.Extensions.ObjectPool": {
+        "type": "Transitive",
+        "resolved": "8.0.7",
+        "contentHash": "2yLweyqmpuuFSRo+I3sLHMxmnAgNcI537kBJiyv49U2ZEqo00jZcG8lrnD8uCiOJp9IklYyTZULtbsXoFVzsjQ=="
+      },
       "PeepingTom.Ipc": {
-        "type": "Project"
+        "type": "Project",
+        "dependencies": {
+          "Lumina": "[5.6.0, )"
+        }
       }
     }
   }

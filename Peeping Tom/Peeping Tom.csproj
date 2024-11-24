@@ -22,7 +22,7 @@
         <DalamudLibPath>$(HOME)/dalamud</DalamudLibPath>
     </PropertyGroup>
     <ItemGroup>
-        <EmbeddedResource Include="Resources\target.wav"/>
+        <EmbeddedResource Include="Resources\target.wav" />
         <EmbeddedResource Update="Resources\Language.resx">
             <Generator>ResXFileCodeGenerator</Generator>
             <LastGenOutput>Language.Designer.cs</LastGenOutput>
@@ -55,14 +55,15 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="DalamudPackager" Version="2.1.13" />
+        <PackageReference Include="DalamudPackager" Version="11.0.0" />
         <PackageReference Include="Fody" Version="6.8.1" PrivateAssets="all" />
-        <PackageReference Include="NAudio.Core" Version="2.2.1"/>
-        <PackageReference Include="NAudio.Wasapi" Version="2.2.1"/>
-        <PackageReference Include="Resourcer.Fody" Version="1.8.1" PrivateAssets="all"/>
+        <PackageReference Include="Lumina" Version="5.6.0" />
+        <PackageReference Include="NAudio.Core" Version="2.2.1" />
+        <PackageReference Include="NAudio.Wasapi" Version="2.2.1" />
+        <PackageReference Include="Resourcer.Fody" Version="1.8.1" PrivateAssets="all" />
     </ItemGroup>
     <ItemGroup>
-        <ProjectReference Include="..\Peeping Tom.Ipc\Peeping Tom.Ipc.csproj"/>
+        <ProjectReference Include="..\Peeping Tom.Ipc\Peeping Tom.Ipc.csproj" />
     </ItemGroup>
     <ItemGroup>
         <Compile Update="Resources\Language.Designer.cs">
